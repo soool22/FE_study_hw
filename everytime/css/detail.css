@@ -141,7 +141,7 @@ section {
 
 #title {
   height: 55px;
-  width: 99%;
+  width: 810px;
   border: 1px solid lightgray;
   margin-top: 27px;
   margin-left: 135px;
@@ -149,80 +149,58 @@ section {
   align-items: center;
 }
 
-#hot-qa {
-  height: 128px;
-  width: 99%;
+.detail {
+  height: 510px;
+  width: 780px;
   border: 1px solid lightgray;
-  margin-top: 5px;
+  margin-top: 10px;
   margin-left: 135px;
   display: flex;
-  align-items: center;
-}
-
-#hotqa-img {
-  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
   flex-direction: column;
-  gap: 15px;
-  margin-left: 20px;
+  padding: 15px;
 }
 
-.qazip,
-.hotzip {
+.det-header {
+  width: 750px;
+  height: 50px;
   display: flex;
   flex-direction: row;
-  align-items: center;
-  gap: 10px;
+  justify-content: flex-start;
 }
 
-.qa-keyword,
-.hot-keyword {
+.com-header {
+  width: 750px;
+  height: 20px;
   display: flex;
-  gap: 10px;
+  flex-direction: row;
+  justify-content: flex-start;
 }
 
-.qa-keyword span {
-  font-size: 13px;
-  height: 23px;
-  width: auto;
-  padding: 5px 10px;
-  background-color: #e9fcff;
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.det-header img {
+  margin: 0 10px 15px 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
 }
 
-.hot-keyword span {
-  font-size: 13px;
-  height: 23px;
-  width: auto;
-  padding: 5px 10px;
-  background-color: rgb(255, 243, 243);
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.com-header img {
+  margin: 0 10px 15px 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
 }
 
-#new-write {
-  height: 45px;
-  width: 99%;
-  background-color: #f1f1f1;
-  border: 2px solid lightgray;
-  margin-top: 7px;
-  margin: 9px 15px 0px 135px;
-  display: flex;
-  justify-content: space-between;
+.dht p {
+  margin: 0;
 }
 
-.write-box {
-  height: 115px;
-  width: 99%;
-  border: 1px solid lightgray;
-  margin-top: -1px;
-  margin-left: 135px;
+.post-tit {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
+  width: 750px;
+  margin-top: 10px;
 }
 
 #live-pop {
@@ -230,7 +208,7 @@ section {
   width: 315px;
   background-color: #f1f1f1;
   border: 1px solid lightgray;
-  margin: 27px 0px 0px 157px;
+  margin: 27px 0px 0px 30px;
   display: flex;
   align-items: center;
 }
@@ -242,33 +220,7 @@ section {
   width: 315px;
   background-color: #f1f1f1;
   border: 1px solid lightgray;
-  margin: -1px 0px 0px 157px;
-}
-
-.pop-class {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.pop-class,
-.school-class,
-.review-class {
-  margin: 3px 0px 0px 8px;
-  gap: 0;
-}
-.write-class {
-  margin: 18px 0px 0px 16px;
-}
-
-.write-last {
-  width: 315px;
-  height: 20px;
-  display: flex;
-  flex-direction: row;
-  gap: 5px;
-  align-items: baseline;
-  margin-top: 15px;
+  margin: -1px 0px 0px 30px;
 }
 
 .pop-last,
@@ -288,9 +240,22 @@ section {
   width: 315px;
   background-color: #f1f1f1;
   border: 1px solid lightgray;
-  margin: 5px 0px 0px 157px;
+  margin: 5px 0px 0px 30px;
   display: flex;
   align-items: center;
+}
+
+.pop-class {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.pop-class,
+.school-class,
+.review-class {
+  margin: 3px 0px 0px 8px;
+  gap: 0;
 }
 
 .hot-write {
@@ -298,7 +263,65 @@ section {
   width: 315px;
   background-color: #f1f1f1;
   border: 1px solid lightgray;
-  margin: -1px 0px 0px 157px;
+  margin: -1px 0px 0px 30px;
   display: flex;
   align-items: center;
+}
+
+.post-img img {
+  width: 25%;
+}
+
+.post-last {
+  width: 315px;
+  height: 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  align-items: baseline;
+  margin-top: 15px;
+}
+
+.posvote,
+.scrap {
+  font-size: 13px;
+  height: 23px;
+  width: auto;
+  padding: 5px 10px;
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  margin-top: 15px;
+}
+
+.com {
+  height: 70px;
+  width: 780px;
+  border: 1px solid lightgray;
+  margin: -1px auto auto 135px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding: 15px;
+}
+
+.com-write {
+  height: 10px;
+  width: 740px;
+  border: 1px solid lightgray;
+  margin: -1px auto auto 135px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding: 15px;
 }
