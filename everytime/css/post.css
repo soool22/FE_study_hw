@@ -1,0 +1,77 @@
+.write {
+  height: 502px;
+  width: 780px;
+  border: 2px solid lightgray;
+}
+
+.write-header {
+  height: 50px;
+  border: 1px solid lightgrey;
+  margin: -1px -1px 0 -1px;
+  display: flex;
+  align-items: center;
+}
+
+.write-header b {
+  margin-left: 15px;
+  color: gray;
+}
+
+.write-sec {
+  height: 380px;
+  overflow: auto;
+  padding: 15px;
+}
+
+.write-sec p {
+  margin: 0;
+  font-size: 14px;
+  color: gray;
+}
+
+.write-opt {
+  height: 40px;
+  border: 1px solid lightgrey;
+  margin: 0 -1px -1px -1px;
+}
+
+.snc img {
+  width: 40px;
+  height: 40px;
+}
+
+.com-write-button {
+  height: 42px;
+  width: 42px;
+  background-color: red;
+  margin: -1px 0 0 -1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.com-write-button img {
+  width: 40px;
+  height: 40px;
+}
+
+.position-ch1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.position-ch1 b {
+  font-size: 14px;
+  color: gray;
+}
+
+.qa {
+  gap: 10px;
+  margin-bottom: 5px;
+}
+
+.class {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}

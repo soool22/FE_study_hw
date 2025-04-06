@@ -171,11 +171,11 @@ section {
 }
 
 .com-header {
-  width: 750px;
+  width: 783px;
   height: 20px;
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: space-between;
 }
 
 .det-header img {
@@ -221,6 +221,9 @@ section {
   background-color: #f1f1f1;
   border: 1px solid lightgray;
   margin: -1px 0px 0px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .pop-last,
@@ -284,7 +287,7 @@ section {
 
 .posvote,
 .scrap {
-  font-size: 13px;
+  font-size: 12px;
   height: 23px;
   width: auto;
   padding: 5px 10px;
@@ -314,14 +317,67 @@ section {
   padding: 15px;
 }
 
+.plus-com {
+  display: flex;
+  flex-direction: row;
+}
+
 .com-write {
-  height: 10px;
-  width: 740px;
+  height: 40px;
+  width: 768px;
   border: 1px solid lightgray;
+  background-color: #f1f1f1;
   margin: -1px auto auto 135px;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.com-write-button {
+  height: 42px;
+  width: 42px;
+  background-color: red;
+  margin: -1px 0 0 -1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.com-write-button img {
+  width: 40px;
+  height: 40px;
+}
+
+.person {
+  display: flex;
   justify-content: flex-start;
-  flex-direction: column;
-  padding: 15px;
+}
+
+.per-option {
+  gap: 10px;
+}
+
+.per-option span {
+  font-size: 12px;
+  color: lightgrey;
+}
+
+.write-menu {
+  font-size: 14px;
+  color: red;
+  height: 23px;
+  width: 65px;
+  padding: 5px 10px;
+  border-radius: 7px;
+  border: 1px solid red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0 0 135px;
+}
+
+.write-menu img {
+  width: 10px;
+  height: 10px;
+  margin-right: 5px;
 }
