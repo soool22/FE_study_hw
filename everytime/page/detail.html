@@ -9,14 +9,16 @@
   <body>
     <header>
       <div id="header">
-        <img
-          src="../img/nav.logo.png"
-          width="2.8%"
-          style="margin-top: 13px; margin-bottom: 20px; margin-left: 135px"
-        />
-        <div class="logo-font">
-          <b style="font-size: 12px; color: red">에브리타임</b>
-          <p style="font-size: 22px; margin-bottom: 17px">덕성여대</p>
+        <div class="header-media">
+          <img class="hamburger" src="../img/aside.title.hamburger.png" />
+          <b>비밀 게시판</b>
+        </div>
+        <div class="logo-part">
+          <img src="../img/nav.logo.png" width="40px" height="40px" />
+          <div class="logo-font">
+            <b style="font-size: 12px; color: red">에브리타임</b>
+            <p style="font-size: 22px; margin-bottom: 5px">덕성여대</p>
+          </div>
         </div>
         <div class="header-font">
           <b style="color: red">게시판</b>
@@ -30,12 +32,12 @@
         <div class="header-img">
           <img
             src="../img/icn_m_chat_gray800_light.png"
-            width="18%"
+            width="37px"
             style="border: 2px solid lightgray; border-radius: 14px"
           />
           <img
             src="../img/icn_m_account_gray800_light.png"
-            width="18%"
+            width="37px"
             style="border: 2px solid lightgray; border-radius: 14px"
           />
         </div>
@@ -162,22 +164,22 @@
             <p style="font-size: 12px; margin: 0; color: #ffc900">12</p>
           </div>
           <div class="button">
-            <div class="posvote">
+            <button class="posvote">
               <img
                 src="../img/container.articles.buttons.posvote.png"
                 width="12px"
                 height="12px"
               />
               <b style="margin-left: 5px">공감</b>
-            </div>
-            <div class="scrap">
+            </button>
+            <button class="scrap">
               <img
                 src="../img/container.articles.buttons.scrap.png"
                 width="12px"
                 height="12px"
               />
               <b style="margin-left: 5px">스크랩</b>
-            </div>
+            </button>
           </div>
         </div>
         <div class="com">
@@ -204,22 +206,29 @@
         </div>
         <div class="plus-com">
           <div class="com-write">
-            <p style="font-size: 14px; color: lightgrey; margin-left: 5px">
-              댓글을 입력하세요.
-            </p>
-            <p style="font-size: 12px; color: lightgrey; margin-right: 5px">
-              □익명
-            </p>
+            <form>
+              <div class="in_ch">
+                <input
+                  class="text_input"
+                  type="text"
+                  placeholder="  댓글을 입력하세요."
+                />
+                <div class="checkbox" style="gap: 5px">
+                  <input type="checkbox" name="anonymity" />
+                  <span>익명</span>
+                </div>
+              </div>
+            </form>
           </div>
           <div class="com-write-button">
             <img src="../img/container.articles.write.submit.png" />
           </div>
         </div>
-        <div class="write-menu">
+        <button class="write-menu">
           <img src="../img/container.articles.pagination.list.png" /><b
             >글 목록</b
           >
-        </div>
+        </button>
       </article>
       <aside>
         <div id="live-pop">

@@ -9,6 +9,7 @@ body {
   border-bottom: 1px solid lightgrey;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .logo-font {
@@ -20,27 +21,36 @@ body {
 
 .logo-font p {
   margin: 2px 0;
+  white-space: nowrap;
+}
+
+.logo-part {
+  display: flex;
+  align-items: center;
+  margin-left: 130px;
 }
 
 .header-font {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 37%;
-  margin-left: 160px;
-  margin-bottom: 15px;
+  width: 448px;
+  gap: 20px;
   font-size: 16px;
+  white-space: nowrap;
 }
 
 .header-font b {
   flex-grow: 1;
   text-align: center;
+  white-space: nowrap;
 }
 
 .header-img {
   align-items: center;
-  margin-left: 215px;
   margin-bottom: 8px;
+  margin-right: 140px;
+  white-space: nowrap;
 }
 
 #nav {
@@ -73,6 +83,7 @@ section {
   text-align: start;
   margin: 0;
   margin-left: 18px;
+  white-space: nowrap;
 }
 
 #notice p {
@@ -80,11 +91,13 @@ section {
   text-align: start;
   margin: 0;
   margin-left: 18px;
+  white-space: nowrap;
 }
 
 #notice1 p {
   font-size: 13px;
   margin: 0;
+  white-space: nowrap;
 }
 
 #notice2 p,
@@ -95,6 +108,7 @@ section {
   font-size: 13px;
   text-align: start;
   margin: 0;
+  white-space: nowrap;
 }
 
 #notice3 b,
@@ -103,6 +117,7 @@ section {
   font-size: 13px;
   text-align: start;
   margin: 0;
+  white-space: nowrap;
 }
 
 #notice1,
@@ -304,4 +319,81 @@ section {
   margin: -1px 0px 0px 157px;
   display: flex;
   align-items: center;
+}
+
+.header-media {
+  display: none;
+}
+
+.hamburger {
+  display: none;
+}
+
+article {
+  width: 63%;
+}
+
+@media (max-width: 640px) {
+  #live-pop,
+  .pop,
+  #hot,
+  .hot-write,
+  #best,
+  #school-news,
+  .school-news,
+  #review-title,
+  .review,
+  #title {
+    display: none;
+  }
+
+  #notice3,
+  #notice4,
+  #notice5,
+  #notice6 {
+    display: none;
+  }
+
+  .header-font,
+  .header-img,
+  .logo-font,
+  #header img {
+    display: none;
+  }
+
+  #notice,
+  #hot-qa,
+  #new-write,
+  .write-box {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  #notice,
+  #notice1,
+  #notice2 {
+    width: 200px;
+  }
+
+  .header-media {
+    display: block;
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+  }
+  .header-media b {
+    font-size: 20px;
+    margin-left: 10px;
+  }
+
+  .hamburger {
+    display: block;
+    width: 32px;
+    height: auto;
+    display: block !important;
+  }
+
+  article {
+    width: 100%;
+  }
 }

@@ -2,25 +2,28 @@
   height: 502px;
   width: 780px;
   border: 2px solid lightgray;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .write-header {
   height: 50px;
   border: 1px solid lightgrey;
-  margin: -1px -1px 0 -1px;
+  margin: -1px -1px 0 0;
   display: flex;
   align-items: center;
-}
-
-.write-header b {
-  margin-left: 15px;
   color: gray;
+  font-size: 17px;
+  font-weight: bold;
 }
 
-.write-sec {
-  height: 380px;
-  overflow: auto;
-  padding: 15px;
+.write-sec,
+textarea {
+  height: 404px;
+  width: 776px;
+  margin: 0;
+  border: nonex;
 }
 
 .write-sec p {
@@ -31,8 +34,8 @@
 
 .write-opt {
   height: 40px;
-  border: 1px solid lightgrey;
-  margin: 0 -1px -1px -1px;
+  border-top: 1px solid lightgrey;
+  margin: 0;
 }
 
 .snc img {
@@ -40,11 +43,18 @@
   height: 40px;
 }
 
+.content {
+  border: 0;
+  margin-top: 3px;
+  width: 540px;
+  height: 35px;
+}
+
 .com-write-button {
   height: 42px;
   width: 42px;
   background-color: red;
-  margin: -1px 0 0 -1px;
+  margin: -4px 0 0 0px;
   display: flex;
   justify-content: center;
   align-items: center;
