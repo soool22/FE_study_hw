@@ -1,5 +1,5 @@
 .write {
-  height: 502px;
+  height: auto;
   width: 780px;
   border: 2px solid lightgray;
   display: flex;
@@ -16,14 +16,20 @@
   color: gray;
   font-size: 17px;
   font-weight: bold;
+  outline: none;
+  padding-left: 5px;
 }
 
 .write-sec,
 textarea {
-  height: 404px;
-  width: 776px;
+  height: 400px;
+  width: 765px;
   margin: 0;
-  border: nonex;
+  border: none;
+  resize: none;
+  outline: none;
+  padding-left: 5px;
+  font-size: 14px;
 }
 
 .write-sec p {
@@ -38,6 +44,10 @@ textarea {
   margin: 0;
 }
 
+.snc {
+  display: flex;
+}
+
 .snc img {
   width: 40px;
   height: 40px;
@@ -48,6 +58,8 @@ textarea {
   margin-top: 3px;
   width: 540px;
   height: 35px;
+  font-size: 20px;
+  outline: none;
 }
 
 .com-write-button {
@@ -76,12 +88,38 @@ textarea {
 }
 
 .qa {
-  gap: 10px;
+  display: flex;
+  justify-content: center;
   margin-bottom: 5px;
+  width: 120px;
+}
+
+.qa b {
+  margin-right: 5px;
 }
 
 .class {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 5px;
+  height: 40px;
+  margin-top: 3px;
+}
+
+#question_ment {
+  width: 780px;
+  height: 80px;
+  border: 1px solid lightgray;
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#ment {
+  font-size: 14px;
+  border-radius: 10px;
+  padding: 10px 105px 10px 10px;
+  background-color: #e9fcff;
+  color: rgb(0, 189, 189);
 }

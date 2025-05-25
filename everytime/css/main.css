@@ -230,6 +230,23 @@ section {
   justify-content: space-between;
 }
 
+#new_write_btn {
+  z-index: 1000;
+  position: relative;
+}
+
+#post_container {
+  width: 100%;
+  max-width: 780px;
+  height: 1000px;
+  border: none;
+  display: none;
+  overflow-x: hidden;
+  margin: 0 auto;
+  margin-left: 135px;
+  box-sizing: border-box;
+}
+
 .write-box {
   height: 115px;
   width: 99%;

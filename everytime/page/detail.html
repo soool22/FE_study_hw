@@ -149,22 +149,24 @@
               width="12px"
               height="12px"
             />
-            <p style="font-size: 12px; margin: 0; color: red">12</p>
+            <p id="posnum" style="font-size: 12px; margin: 0; color: red">12</p>
             <img
               src="../img/container.articles.comment.png"
               width="12px"
               height="12px"
             />
-            <p style="font-size: 12px; margin: 0; color: rgb(0, 189, 189)">6</p>
+            <p style="font-size: 12px; margin: 0; color: rgb(0, 189, 189)">1</p>
             <img
               src="../img/container.articles.scrap.png"
               width="12px"
               height="12px"
             />
-            <p style="font-size: 12px; margin: 0; color: #ffc900">12</p>
+            <p id="scrapnum" style="font-size: 12px; margin: 0; color: #ffc900">
+              12
+            </p>
           </div>
           <div class="button">
-            <button class="posvote">
+            <button id="posvote">
               <img
                 src="../img/container.articles.buttons.posvote.png"
                 width="12px"
@@ -172,7 +174,7 @@
               />
               <b style="margin-left: 5px">공감</b>
             </button>
-            <button class="scrap">
+            <button id="scrap">
               <img
                 src="../img/container.articles.buttons.scrap.png"
                 width="12px"
@@ -189,7 +191,7 @@
               <div class="dht"><b style="font-size: 12px">익명1</b></div>
             </div>
             <div class="per-option">
-              <span>대댓글</span>
+              <button id="reply">대댓글</button>
               <span>공감</span>
               <span>쪽지</span>
               <span>신고</span>
@@ -203,19 +205,41 @@
               04/03 14:03
             </p>
           </div>
+          <div id="com_reply_write" style="display: none">
+            <form>
+              <div class="com_plus_btn">
+                <div class="in_ch">
+                  <input
+                    id="text_input2"
+                    type="text"
+                    placeholder=" 대댓글을 입력하세요."
+                  />
+                  <div class="checkbox" style="gap: 5px">
+                    <input type="checkbox" name="anonymity" />
+                    <span>익명</span>
+                  </div>
+                </div>
+                <button class="com-write-button">
+                  <img src="../img/container.articles.write.submit.png" />
+                </button>
+              </div>
+            </form>
+          </div>
         </div>
         <div class="plus-com">
           <div class="com-write">
             <form>
-              <div class="in_ch">
-                <input
-                  class="text_input"
-                  type="text"
-                  placeholder="  댓글을 입력하세요."
-                />
-                <div class="checkbox" style="gap: 5px">
-                  <input type="checkbox" name="anonymity" />
-                  <span>익명</span>
+              <div class="com_plus_btn">
+                <div class="in_ch">
+                  <input
+                    class="text_input"
+                    type="text"
+                    placeholder="댓글을 입력하세요."
+                  />
+                  <div class="checkbox" style="gap: 5px">
+                    <input type="checkbox" name="anonymity" />
+                    <span>익명</span>
+                  </div>
                 </div>
               </div>
             </form>
@@ -396,4 +420,5 @@
       </aside>
     </section>
   </body>
+  <script src="../js/detail.js"></script>
 </html>

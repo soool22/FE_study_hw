@@ -8,7 +8,7 @@
   </head>
   <body>
     <div class="write">
-      <input class="write-header" type="text" placeholder="글 제목"></input>
+      <input class="write-header" type="text" placeholder="글 제목" ></input>
       <div class="write-sec">
         <textarea
           placeholder="에브리타임은 누구나 기분 좋게 참여할 수 있는 커뮤니티를 만들기 위해 
@@ -40,6 +40,12 @@
 - 스포일러, 공포, 속임, 놀라게 하는 행위"
         ></textarea>
       </div>
+      <div id="question_ment" style="display: none;">
+        <div id="ment">
+질문 글을 작성하면 게시판 상단에 일정 기간 동안 노출되어, 더욱 빠르게 답변을 얻을 수 있게 됩니다.<br/>
+또한, 다른 학우들이 정성껏 작성한 답변을 유지하기 위해, 댓글이 달린 이후에는 <b>글을 수정 및 삭제할 수 없습니다.</b>
+        </div>
+      </div>
       <div class="write-opt">
         <div class="position-ch1">
           <div class="snc">
@@ -49,8 +55,8 @@
           <input class="content" type="text" placeholder=" "/>
           <div class="class">
             <div class="qa">
-              <input type="checkbox" name="question" /><b>질문</b>
-              <input type="checkbox" name="anonymityx" /><b>익명</b>
+              <input type="checkbox" name="question" id="question"/><b id="quest">질문</b>
+              <input type="checkbox" name="anonymity" id="anonymity"/><b id="anony">익명</b>
             </div>
             <div class="com-write-button">
               <img src="../img/container.articles.write.submit.png" />
@@ -60,5 +66,6 @@
       </div>
     </div>
   </body>
+  <script src="../js/post.js"></script>
 </html>
 <!-- 글 작성페이지 -->

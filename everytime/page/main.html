@@ -145,12 +145,28 @@
           >
             새 글을 작성해주세요!
           </p>
-          <img
-            src="../img/container.articles.write.submit.png"
-            width="5%"
-            style="margin-left: 440px"
-          />
+          <button
+            id="new_write_btn"
+            aria-label="post_btn"
+            style="
+              width: 50px;
+              height: 50px;
+              background: none;
+              border: none;
+              cursor: pointer;
+            "
+          >
+            <img
+              src="../img/container.articles.write.submit.png"
+              width="45px"
+            />
+          </button>
         </div>
+        <iframe
+          id="post_container"
+          title="글쓰기 페이지"
+          style="width: 940px; height: 530px; border: none; display: none"
+        ></iframe>
         <div id="write-box" style="margin-top: 10px"></div>
         <div class="write-box">
           <div class="write-class">
@@ -649,4 +665,5 @@
       </aside>
     </section>
   </body>
+  <script src="../js/main.js"></script>
 </html>

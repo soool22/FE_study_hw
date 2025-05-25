@@ -75,7 +75,7 @@ body {
 
 .keep_login {
   display: flex;
-  flex-direction: row;
+  justify-content: center;
   color: lightgray;
 }
 
@@ -121,13 +121,6 @@ body {
 }
 
 @media (max-width: 640px) {
-  .input_id,
-  .input_password,
-  .login_btn,
-  .option {
-    width: 100%;
-  }
-
   .main {
     width: 100%;
   }
